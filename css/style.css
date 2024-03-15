@@ -1,3 +1,11 @@
+/*************** Utilities Classes *************/
+
+.spacing
+    {
+      padding: 7% 15%;
+    }
+
+
 /*************** Font Section *************/
 
 h1
@@ -5,7 +13,7 @@ h1
     font-size: 3rem;
     font-weight: bolder;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
 /*************** Title Section ************/
@@ -38,9 +46,151 @@ h1
     {
       width: 60%;
       transform: rotate(25deg);
+      padding: 20px 0 0 0;
     }
 
 .btn-download
     {
       margin: 20px 10px 0 0;
+    }
+
+/*************** Feature Section ************/
+
+#features
+    {      
+      text-align: center;
+    }
+
+.feature
+    {
+      padding: 0 40px 0 40px;
+    }
+
+#features i
+    {
+      font-size:60px; 
+      color:#EF8172;
+      margin-bottom: 20px;
+      transition: all 1s;
+    }
+
+#features i:hover
+    {
+      color: #808080;
+      transform:rotateY(360deg);
+    }
+
+#features h3
+    {
+      font-weight: 600px;
+    }
+
+/*************** Reviews Section ************/
+
+#reviews
+    {
+      background-color: #EF8172;
+      color: #ffffff;
+      text-align: center;
+    }
+
+#reviews h2
+    {
+      font-size: 3rem;
+      font-weight: 300;
+    }
+
+#reviews img
+    {
+      width: 10%;
+      border-radius: 100%;
+      margin: 20px 5px 0 0;
+    }
+
+/*************** Clients Section ************/
+
+#clients
+    {
+      padding: 0 15% 7% 15%;
+      background-color: #EF8172;
+      text-align: center;
+    }
+
+#clients img
+    {
+      width: 20%;
+      margin: 0 20px 0 20px;
+    }
+
+/*************** Price Section ************/
+
+#prices
+    {
+      padding: 7% 7%;
+      text-align: center;
+    }
+
+.prices-heading
+    {
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+.prices-info
+    {
+      color: grey;
+      font-size: 1.5rem;
+      font-weight: 200;
+      margin-bottom: 40px;
+    }
+
+.price h3
+    {
+      font-size: 2rem;
+      font-weight: 250;
+    }
+
+.price h2
+    {
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+/*************** CTA Section ************/
+
+#cta
+    {
+      text-align: center;
+      background-color: #FF4C68;
+      color: #ffffff;
+    }
+
+#cta h2
+    {
+      font-size: 3.75rem;
+      margin-bottom: 30px;
+    }
+
+/*************** Fooetr Section ************/
+
+#footer
+    {
+      text-align: center;
+    }
+
+#footer a
+    {
+      margin: 0 5px;      
+    }
+
+#footer i
+    {
+      font-size: 30px;
+      color: black;
+    }
+
+footer p
+    {
+      color: #808080;
+      margin-top: 10px;
     }
