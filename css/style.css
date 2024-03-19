@@ -20,7 +20,7 @@ h1
 
 #title
     {
-      padding: 3% 15% 3% 15%;
+      padding: 3% 15% 9% 15%; /* top | right | bottom | left */
       background-color: #FF4C68;
     }
 
@@ -44,9 +44,10 @@ h1
 
 .title-image
     {
-      width: 60%;
+      width: 55%;
       transform: rotate(25deg);
-      padding: 20px 0 0 0;
+      position: absolute;  /* we bring the title-image out of the HTML (to the front) */
+      right: 25%; /* since we have given padding in the title section we need to give a % value */
     }
 
 .btn-download
@@ -58,7 +59,11 @@ h1
 
 #features
     {      
+      background-color: #ffffff; /* if NO background-color it is default "transparent" */
       text-align: center;
+      position: relative;
+      z-index: 15; 
+      
     }
 
 .feature
@@ -171,7 +176,7 @@ h1
       margin-bottom: 30px;
     }
 
-/*************** Fooetr Section ************/
+/*************** Footer Section ************/
 
 #footer
     {
@@ -194,3 +199,35 @@ footer p
       color: #808080;
       margin-top: 10px;
     }
+
+/************* MediaQuery Section ***********/
+
+@media (max-width: 993px)
+{
+  .price
+  {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 808px)
+{
+  .title-image
+  {
+    transform: rotate(0);
+  } 
+}
+
+@media (max-width: 768px)
+{
+  .title-image
+  {
+    position: static;
+    margin-top: 25px;
+  }
+
+  #title
+  {
+    text-align: center;
+  }
+}
